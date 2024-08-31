@@ -1,0 +1,45 @@
+.divbns1{
+    border-bottom: 2px solid #828bb2;
+    padding-left: 0px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+.div1{
+    border-bottom: 3px solid #0073D2;;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+}
+.containerr{
+    width: 82%;
+    background-color: white;
+   
+    position: relative;
+    left: 18%;
+    margin-top: 10px;
+    border-radius: 10px;
+  
+    
+  }
+  .bnsh1{
+    font-size: 20px;
+    padding-right: 180px;
+    color: #415094;
+    
+  }
+  .h1div{
+    
+    position: relative;
+    top: 50%;
+
+  }
+  .bnsp1{
+    background-color: #002369;
+    margin-top: -16px;
+    
+    color: white;
+    
+  }
+  .bnsp2{
+    padding: 10px;
+  }
