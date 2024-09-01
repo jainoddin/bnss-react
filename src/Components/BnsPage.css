@@ -1,8 +1,24 @@
-.divbns1{
-    border-bottom: 2px solid #828bb2;
+
+
+.p1-2{
+    background-color: #002369;
+    font-size: 11px;
+    position: relative;
+    top: 15px;
+    color: white;
+    
+  }.p12{
+    padding: 13px;
+    font-family: "Roboto", Sans-serif;
+
+    margin-bottom: 15px;
+    color:#828bb2 ;
+    padding-left: 50px;
+  }.divbns1{
+    border-bottom: 2px solid #0073D2;
     padding-left: 0px;
-    margin-left: 30px;
-    margin-bottom: 50px;
+    margin-left: 60px;
+    margin-bottom: 25px;
 }
 .div1{
     border-bottom: 3px solid #0073D2;;
@@ -22,9 +38,11 @@
     
   }
   .bnsh1{
-    font-size: 20px;
-    padding-right: 180px;
+    font-size: 23px;
+    padding-right: 150px;
     color: #415094;
+    font-family: "Roboto", Sans-serif;
+    font-weight: 600;
     
   }
   .h1div{
@@ -41,5 +59,110 @@
     
   }
   .bnsp2{
+    padding: 0px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+  }
+  .bnsp4{
+    color: #002369;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: "Roboto", Sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .bnsp5{
+    font-family: "Domaine", Sans-serif;
+
+    font-size: 1.4rem;
+    clear: both;
+    color: #24292e;
+    font-weight: 500;
+padding-left: 50px;
+    margin-bottom: .5rem;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+  strong{
+    font-weight: bold;
+  }
+  .column {
+    float: left;
+    width: 70%;
     padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+  }
+  .columnN {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+    color: white;
+    margin-left: -50px;
+    margin-top: 45px
+
+}
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .bnsp6{
+    font-family: "Domaine", Sans-serif;
+
+    font-size: 1.0rem;
+    clear: both;
+    color: #24292e;
+    font-weight: 300;
+padding-left: 50px;
+    margin-bottom: .5rem;
+    font-weight: 400;
+    line-height: 1.2;
+    font-style: italic;
+  }
+  .bnsp7{
+    
+    color: #707070;
+  margin-right: 50px;
+padding-left: 50px;
+   font-size: 13px;
+  }
+  .bnsp78{
+    
+    color: #707070;
+  margin-right: -270px;
+padding-left: 50px;
+   font-size: 13px;
+  }
+  .h43{
+    font-family: "Domaine", Sans-serif;
+    font-size: 28px;
+    padding: 10px;
+  }
+  .bottonh4{
+    border-bottom: 7px solid blue;
+   margin-bottom: 15px;
+   
+  }
+  .contact-footer-spam {
+    color: red;
+  }
+  .bns-bottom{
+    font-size: 16px;
+  font-family: Helvetica;
+  color: #828bb2;
+  text-align: center;
+  padding: 10px;
+  padding-left: 15%;
+  }
+
+  .aa {
+    margin-left: 30px; /* Offset content by the width of the sidebar */
+    flex: 1; /* Allow the content to take up the remaining space */
+    overflow-x: hidden;
+    overflow-y: auto; /* Enable vertical scrolling for this section */
+    padding: 20px;
+    height: 100vh; /* Ensure content area is as tall as the viewport */
   }

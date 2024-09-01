@@ -10,6 +10,7 @@ import img1 from '../img/bns.jpg'
 import img2 from '../img/b.jpg'
 import img3 from '../img/x.jpg'
 import img4 from '../img/p.jpg'
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -61,6 +62,7 @@ function Home() {
     {
       image: `${img1}`,
       title: 'Bharatiya Nyaya Sanhita',
+      
     },
     {
       image: `${img2}`,
@@ -414,8 +416,29 @@ seticon(!icon)
 
 
 
-
-
+  const navigate = useNavigate();
+  const handleCardClick = (index) => {
+    console.log(`Card with index ${index} clicked.`);
+    console.log(`Navigating to page ${index + 1}.`);
+  
+    // Navigate to the corresponding page
+    switch (index) {
+      case 0:
+        navigate('/bns'); // Navigate to card1 page
+        break;
+      case 1:
+        navigate('/card2'); // Navigate to card2 page
+        break;
+      case 2:
+        navigate('/card3'); // Navigate to card3 page
+        break;
+      // Add more cases for each card index
+      default:
+        navigate('Invalid index');
+    }
+  };
+  
+  
 
 
   
@@ -423,7 +446,7 @@ seticon(!icon)
   return (
     <div className="legal-research">
       <div className="sidebar">
-      <div >hh</div>
+      <div >Sidebar</div>
       </div>
       <div className="a">
         <div>
@@ -533,19 +556,23 @@ seticon(!icon)
               <div>
                 <h3 className="k">{selectedLanguage === 'English' ? 'The Law Firm’s Areas of Practice' : selectedLanguage === 'Telugu' ? 'న్యాయ సంస్థ యొక్క ప్రాక్టీస్ ప్రాంతాలు':'लॉ फर्म के अभ्यास के क्षेत्र'}</h3>
               </div>
+
+
+
               <div className="card-gridd">
-              {cards.map((card, index) => (
-          <Card
-            key={index}
-            image={card.image}
-            title={
-              selectedLanguage === 'English'
-                ? card.title
-                : getTranslatedTitle(card.title, selectedLanguage)
-            }
-          />
-        ))}
-              </div>
+  {cards.map((card, index) => (
+    <div key={index} onClick={() => handleCardClick(index)}>
+      <Card
+        image={card.image}
+        title={
+          selectedLanguage === 'English'
+            ? card.title
+            : getTranslatedTitle(card.title, selectedLanguage)
+        }
+      />
+    </div>
+  ))}
+</div>
 
 
               <h3 style={{justifyContent:"center"}} className="h32">{selectedLanguage === 'English' ? 'Testimonials' : selectedLanguage === 'Telugu' ? 'టెస్టిమోనియల్స్' :'प्रशंसापत्र'}</h3>
@@ -670,9 +697,13 @@ seticon(!icon)
             </div>
           )}
         </div>
+        <div><p className="bns-bottom"> Copyright © 2020 - 2021 All rights reserved | This application
+        is made by <span className="contact-footer-spam">SGU</span></p></div>
       </div>
+      
     </div>
   );
 }
+
 
 export default Home;

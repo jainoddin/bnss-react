@@ -1,7 +1,7 @@
 import React from 'react'
 import {  Route, Routes } from 'react-router-dom';
 import Home from './Components/Home';
-import BnsPage from './Components/BnsPage';
+import Bns from './Components/Bns';
 
 const App = () => {
   return (
@@ -9,7 +9,9 @@ const App = () => {
     
        <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/bns" element={<BnsPage />} />
+      <Route path="/bns" element={<Bns />} />
+
+
       </Routes>
     
    
