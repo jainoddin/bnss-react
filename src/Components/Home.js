@@ -427,7 +427,7 @@ seticon(!icon)
         navigate('/bns'); // Navigate to card1 page
         break;
       case 1:
-        navigate('/card2'); // Navigate to card2 page
+        navigate('/bnss'); // Navigate to card2 page
         break;
       case 2:
         navigate('/card3'); // Navigate to card3 page

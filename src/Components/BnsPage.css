@@ -224,3 +224,81 @@ padding-left: 50px;
   padding-left: 50px;
      font-size: 13px;
   }
+
+  /*--------------------------------------------BNSS--------------------------------------------------------*/
+  .bnsSh1{
+    font-size: 23px;
+    padding-right: 0px;
+    color: #415094;
+    font-family: "Roboto", Sans-serif;
+    font-weight: 600;
+    position: relative;
+    top: 35px;
+    
+  }
+  .btnff{
+    position: relative;
+    top: 40px;
+    left: 350px;
+    border: none;
+    border-radius: 50%;
+    background: none;
+  }
+  .btntt{
+    position: relative;
+    top: 43px;
+    left: 348px;
+    border: none;
+    border-radius: 50%;
+    background: none;
+  }
+  .btnii{
+    position: relative;
+    top: 45px;
+    left: 340px;
+    border: none;
+    border-radius: 50%;
+    background: none;
+  }
+  .btnf:hover{
+    color: #0073D2;
+  }
+  .iconf:hover{
+    color: blue;
+    cursor: pointer;
+  }
+  .iconf{
+    color:#002369;
+  }
+  .bnsssbox1{
+    border: 1px solid #828bb2;
+    margin-bottom: 20px;
+    
+  }
+  .bnsssh1{
+    border: 1px solid #ddd;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    position: relative;
+    font-family: "Domaine", Sans-serif;
+
+   top: 22px;
+    background-color: #bfbfbf;
+    padding: 10px;
+    color: #3f4761;
+  }
+  .bbbb{
+    border-bottom: 1px solid #ddd;
+    font-family: "Domaine", Sans-serif;
+    cursor: pointer;
+
+  }
+  .bbbbb{
+    border-bottom: 1px solid #ddd;
+    font-family: "Domaine", Sans-serif;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    cursor: pointer;
+
+  }

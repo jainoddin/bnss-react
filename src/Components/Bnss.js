@@ -9,13 +9,17 @@ import { RxDividerVertical } from "react-icons/rx";
 import { FaFacebook } from "react-icons/fa6";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { TiSocialLinkedinCircular } from "react-icons/ti";
+import imgbnss from '../img/bnss.jpeg'
+import { BsFileEarmarkPdf } from "react-icons/bs";
+import { GoDotFill } from "react-icons/go";
 
 
 
 
 
 
-const BnsPage = () => {
+
+const Bnss = () => {
 
     
       
@@ -86,7 +90,13 @@ const BnsPage = () => {
   
     
     
-    
+      const handleClick1 = () => {
+        window.location.href = 'https://prsindia.org/files/bills_acts/bills_parliament/2023/Bharatiya_Nagarik_Suraksha_Sanhita,_2023.pdf';
+      };
+
+      const handleClick2=()=>{
+        window.location.href='https://prsindia.org/files/bills_acts/bills_parliament/2023/SC_Report_Bharatiya_Nagarik_Suraksha_Sanhita_2023.pdf'
+      }
     
     
     
@@ -125,10 +135,10 @@ const BnsPage = () => {
       <div>
       <h3 id={selectedLanguage === 'Telugu' ? 'tel' : selectedLanguage === 'Hindi' ? 'hin' : 'p'} style={{width:"55%"}}>
 {selectedLanguage === 'English'
-  ? 'Bharatiya Nyaya Sanhita'
+  ? 'Bharatiya Nagarik Suraksha Sanhita'
   : selectedLanguage === 'Telugu'
-  ? 'భారతీయ న్యాయ సంహిత'
-  : 'भारतीय न्याय संहिता'}
+  ? 'భారతీయ నాగరిక్ సురక్ష సంహిత'
+  : 'भारतीय नागरिक सुरक्षा संहिता'}
 </h3>
 
 
@@ -158,29 +168,29 @@ const BnsPage = () => {
 
       <div className='p1-2'>
     <p className='p12'> {selectedLanguage === 'English'
-  ? 'Changes Brought Forth by the Bharatiya Nyaya Sanhita, 2023'
+  ? 'Bharatiya Nagarik Suraksha Sanhita(BNSS) Monthly Digest- July 2024'
   : selectedLanguage === 'Telugu'
-  ? 'భారతీయ న్యాయ సంహిత, 2023 ద్వారా వచ్చిన మార్పులు'
-  : 'भारतीय न्याय संहिता, 2023 द्वारा लाए गए परिवर्तन'}</p>
+  ? 'భారతీయ నాగరిక్ సురక్ష సంహిత(BNSS) మంత్లీ డైజెస్ట్- జూలై 2024'
+  : 'भारतीय नागरिक सुरक्षा संहिता (बीएनएसएस) मासिक डाइजेस्ट- जुलाई 2024'}</p>
 </div>
 <div style={{display:"flex"}} className='div1'>
 
 
 
-<img src={img1} alt="Description" style={{width:"50%"}}></img>
+<img src={imgbnss} alt="Description" style={{width:"45%",}}></img>
 <div className='divbns1'>
 <div className='h1div'>
- <button className='btnf'><FaFacebook style={{width:"30px",height:"30px"}} className='iconf'/></button>
- <button className='btnt'><AiFillTwitterCircle style={{width:"35px",height:"35px"}} className='iconf'/></button>
- <button className='btni'><TiSocialLinkedinCircular style={{width:"40px",height:"40px"}} className='iconf'/></button>
+ <button className='btnff'><FaFacebook style={{width:"30px",height:"30px"}} className='iconf'/></button>
+ <button className='btntt'><AiFillTwitterCircle style={{width:"35px",height:"35px"}} className='iconf'/></button>
+ <button className='btnii'><TiSocialLinkedinCircular style={{width:"40px",height:"40px"}} className='iconf'/></button>
 
 
-    <h1 className='bnsh1'>
+    <h1 className='bnsSh1'>
       {selectedLanguage === 'English'
-  ? 'Changes Brought Forth by the Bharatiya Nyaya Sanhita, 2023'
+  ? `Bharatiya Nagarik Suraksha Sanhita(BNSS) Monthly Digest- July 2024`
   : selectedLanguage === 'Telugu'
-  ? 'భారతీయ న్యాయ సంహిత, 2023 ద్వారా వచ్చిన మార్పులు'
-  : 'भारतीय न्याय संहिता, 2023 द्वारा लाए गए परिवर्तन'}
+  ? 'భారతీయ నాగరిక్ సురక్ష సంహిత(BNSS) మంత్లీ డైజెస్ట్- జూలై 2024'
+  : 'भारतीय नागरिक सुरक्षा संहिता (बीएनएसएस) मासिक डाइजेस्ट- जुलाई 2024'}
     </h1>
 </div>
 </div>
@@ -200,10 +210,10 @@ const BnsPage = () => {
      
      
      {selectedLanguage === 'English'
-  ? 'Bharatiya Nyaya Sanhita, 2023'
+  ? 'Bharatiya Nagarik Suraksha Sanhita(BNSS), 2023'
   : selectedLanguage === 'Telugu'
-  ? 'భారతీయ న్యాయ సంహిత, 2023'
-  : 'भारतीय न्याय संहिता, 2023'}
+  ? 'భారతీయ నాగరిక్ సురక్ష సంహిత(BNSS), 2023'
+  : 'भारतीय नागरिक सुरक्षा संहिता (बीएनएसएस), 2023'}
 
 
 
@@ -213,109 +223,85 @@ const BnsPage = () => {
 <div>
     <p className='bnsp4' >
       {selectedLanguage === 'English'
-  ? `The Bhartiya Nyaya Sanhita, 2023 (hereinafter referred to as the “BNS”) is a criminal 
-        legislation which seeks to replace the erstwhile Indian Penal Code, 1860 (hereinafter referred
-         to as the “IPC”). A lot of significant changes can be observed in the BNS, such as the introduction 
-         of community service as a punishment, the grouping of inchoate offences under the same chapter,
-          among others. This article seeks to present a comparative analysis of these changes, highlighting
-           the key differences and their potential impact on our criminal justice system.`
+  ? `The Bharatiya Nagarik Suraksha Sanhita (BNSS) Monthly Digest for July 2024 serves as a comprehensive resource aimed at providing updates, analyses, and insights into the ongoing developments surrounding the BNSS. The BNSS, a landmark legislative framework, has been instrumental in reshaping India's approach to citizen security, focusing on modernizing laws and enhancing the safety of its citizens.`
   : selectedLanguage === 'Telugu'
-  ? `భారతీయ న్యాయ సంహిత, 2023 (ఇకపై "BNS" గా సూచిస్తారు) నేరస్థుడు 
-        పాత భారతీయ శిక్షాస్మృతి, 1860 (ఇకపై ప్రస్తావించబడింది
-         "IPC" గా). పరిచయం వంటి చాలా ముఖ్యమైన మార్పులను BNSలో గమనించవచ్చు 
-         శిక్షగా సమాజ సేవ, అదే అధ్యాయం కింద ఇంకోట్ నేరాల సమూహం,
-          ఇతరులలో. ఈ కథనం ఈ మార్పుల యొక్క తులనాత్మక విశ్లేషణను హైలైట్ చేయడానికి ప్రయత్నిస్తుంది
-           మన నేర న్యాయ వ్యవస్థపై కీలక వ్యత్యాసాలు మరియు వాటి సంభావ్య ప్రభావం.`
-  : `भारतीय न्याय संहिता, 2023 (बाद में इसे "बीएनएस" के रूप में संदर्भित किया जाएगा) एक आपराधिक कानून है 
-        कानून जो पूर्ववर्ती भारतीय दंड संहिता, 1860 (इसके बाद संदर्भित) को प्रतिस्थापित करना चाहता है
-         "आईपीसी" के रूप में)। बीएनएस में कई महत्वपूर्ण बदलाव देखे जा सकते हैं, जैसे कि परिचय 
-         सजा के रूप में सामुदायिक सेवा, एक ही अध्याय के अंतर्गत छोटे अपराधों का समूहीकरण,
-          दूसरों के बीच में। यह आलेख इन परिवर्तनों पर प्रकाश डालते हुए उनका तुलनात्मक विश्लेषण प्रस्तुत करना चाहता है
-           मुख्य अंतर और हमारी आपराधिक न्याय प्रणाली पर उनका संभावित प्रभाव।`}
+  ? `జూలై 2024 కోసం భారతీయ నాగరిక్ సురక్ష సంహిత (BNSS) మంత్లీ డైజెస్ట్ BNSS చుట్టూ జరుగుతున్న పరిణామాలకు సంబంధించిన అప్‌డేట్‌లు, విశ్లేషణలు మరియు అంతర్దృష్టులను అందించే లక్ష్యంతో ఒక సమగ్ర వనరుగా పనిచేస్తుంది. BNSS, ఒక ల్యాండ్‌మార్క్ లెజిస్లేటివ్ ఫ్రేమ్‌వర్క్, పౌర భద్రతకు భారతదేశం యొక్క విధానాన్ని పునర్నిర్మించడంలో, చట్టాలను ఆధునీకరించడం మరియు దాని పౌరుల భద్రతను పెంచడంపై దృష్టి సారించడంలో కీలకపాత్ర పోషించింది.`
+  : `जुलाई 2024 के लिए भारतीय नागरिक सुरक्षा संहिता (बीएनएसएस) मासिक डाइजेस्ट एक व्यापक संसाधन के रूप में कार्य करता है जिसका उद्देश्य बीएनएसएस के आसपास चल रहे विकास में अद्यतन, विश्लेषण और अंतर्दृष्टि प्रदान करना है। बीएनएसएस, एक ऐतिहासिक विधायी ढांचा, नागरिक सुरक्षा के प्रति भारत के दृष्टिकोण को नया आकार देने, कानूनों को आधुनिक बनाने और अपने नागरिकों की सुरक्षा बढ़ाने पर ध्यान केंद्रित करने में सहायक रहा है।`}
            </p>
+           <p className='bnsp4'>{selectedLanguage === 'English'
+  ? `This digest seeks to inform policymakers, legal experts, law enforcement agencies, and the public about the latest legislative amendments, significant case studies, and the impact of BNSS on crime prevention and law enforcement. Through expert opinions, detailed case analyses, and statistical data, the digest offers a critical examination of how the BNSS is being implemented across the country and its effectiveness in addressing contemporary security challenges.`:
+  selectedLanguage === 'Telugu'
+  ?`ఈ డైజెస్ట్ తాజా శాసన సవరణలు, ముఖ్యమైన కేస్ స్టడీస్ మరియు నేరాల నివారణ మరియు చట్ట అమలుపై BNSS ప్రభావం గురించి విధాన రూపకర్తలు, న్యాయ నిపుణులు, చట్టాన్ని అమలు చేసే ఏజెన్సీలు మరియు ప్రజలకు తెలియజేయడానికి ప్రయత్నిస్తుంది. నిపుణుల అభిప్రాయాలు, వివరణాత్మక కేసు విశ్లేషణలు మరియు గణాంక డేటా ద్వారా, దేశవ్యాప్తంగా BNSS ఎలా అమలు చేయబడుతోంది మరియు సమకాలీన భద్రతా సవాళ్లను ఎదుర్కోవడంలో దాని ప్రభావం గురించి డైజెస్ట్ క్లిష్టమైన పరిశీలనను అందిస్తుంది.`:`यह डाइजेस्ट नीति निर्माताओं, कानूनी विशेषज्ञों, कानून प्रवर्तन एजेंसियों और जनता को नवीनतम विधायी संशोधनों, महत्वपूर्ण मामले के अध्ययन और अपराध की रोकथाम और कानून प्रवर्तन पर बीएनएसएस के प्रभाव के बारे में सूचित करना चाहता है। विशेषज्ञों की राय, विस्तृत मामले के विश्लेषण और सांख्यिकीय डेटा के माध्यम से, डाइजेस्ट इस बात की एक महत्वपूर्ण जांच प्रदान करता है कि बीएनएसएस को देश भर में कैसे लागू किया जा रहा है और समकालीन सुरक्षा चुनौतियों से निपटने में इसकी प्रभावशीलता क्या है।`
+           }</p>
+           <p className='bnsp4'>{selectedLanguage === 'English'
+  ? `Whether you're a legal professional, a public official, or simply a concerned citizen, the BNSS Monthly Digest provides valuable insights into the current landscape of citizen security in India and the evolving role of the BNSS in ensuring a safer and more just society.`
+  :selectedLanguage === 'Telugu'?`మీరు న్యాయ నిపుణులు అయినా, ప్రభుత్వ అధికారి అయినా లేదా సంబంధిత పౌరుడైనా, BNSS మంత్లీ డైజెస్ట్ భారతదేశంలోని పౌర భద్రత యొక్క ప్రస్తుత ప్రకృతి దృశ్యం మరియు సురక్షితమైన మరియు మరింత న్యాయమైన సమాజాన్ని నిర్ధారించడంలో BNSS యొక్క అభివృద్ధి చెందుతున్న పాత్రపై విలువైన అంతర్దృష్టులను అందిస్తుంది.`
+  :`चाहे आप एक कानूनी पेशेवर हों, एक सार्वजनिक अधिकारी हों, या बस एक चिंतित नागरिक हों, बीएनएसएस मासिक डाइजेस्ट भारत में नागरिक सुरक्षा के वर्तमान परिदृश्य और एक सुरक्षित और अधिक न्यायपूर्ण समाज सुनिश्चित करने में बीएनएसएस की उभरती भूमिका के बारे में बहुमूल्य अंतर्दृष्टि प्रदान करता है।`}</p>
            <div class="row">
            <div class="column" >
     <h4 className='bnsp5'>
     {selectedLanguage === 'English'
-  ? 'Addition and Alteration of Certain Language and Provisions'
+  ? 'The Bharatiya Nagarik Suraksha Sanhita, 2023'
   : selectedLanguage === 'Telugu'
-  ? 'కొన్ని భాష మరియు నిబంధనలను జోడించడం మరియు మార్చడం'
-  : 'कुछ भाषा और प्रावधानों का परिवर्धन और परिवर्तन'}</h4>
+  ? 'భారతీయ నాగరిక్ సురక్ష సంహిత, 2023'
+  : 'भारतीय नागरिक सुरक्षा संहिता, 2023'}</h4>
     <h4 className='bnsp6'>
        
-     {selectedLanguage === 'English'
-  ? 'Commission of Offences through Electronic Means '
-  : selectedLanguage === 'Telugu'
-  ? 'ఎలక్ట్రానిక్ మార్గాల ద్వారా నేరాల కమిషన్'
-  : 'इलेक्ट्रॉनिक माध्यम से अपराध करना'}   </h4>
-    <p className='bnsp7'>
     {selectedLanguage === 'English'
-  ? `According to individual statistical reports[1], India has reportedly been
-         home to approximately 750 million internet users and 460 million users of
-          various platforms of social media, which equates to roughly 30% of the total
-           users in the world. Further, according to recent independent studies[2], smartphone
-            users in India were approximately 650 million strong. These and other
-             studies on the subject make it obvious that a substantial portion of the Indian 
-             population interacts, transacts and operates through digital mediums. Naturally, 
-             incidents of criminal activity have risen. In fact, according to Crime in India 2022[3], 
-             a publication of the National Crime Records Bureau, there has been an increase of 24.4% in 
-             the registration of cases under Cybercrime as compared to 2021.`
+  ? 'Highlights of the Bill'
   : selectedLanguage === 'Telugu'
-  ? `వ్యక్తిగత గణాంక నివేదికల ప్రకారం[1], భారతదేశం నివేదించబడింది
-         సుమారు 750 మిలియన్ల ఇంటర్నెట్ వినియోగదారులు మరియు 460 మిలియన్ల వినియోగదారులకు నిలయం
-          సోషల్ మీడియా యొక్క వివిధ ప్లాట్‌ఫారమ్‌లు, ఇది మొత్తంలో దాదాపు 30%కి సమానం
-           ప్రపంచంలోని వినియోగదారులు. ఇంకా, ఇటీవలి స్వతంత్ర అధ్యయనాల ప్రకారం[2], స్మార్ట్‌ఫోన్
-            భారతదేశంలోని వినియోగదారులు దాదాపు 650 మిలియన్ల మంది ఉన్నారు. ఇవి మరియు ఇతర
-             ఈ విషయంపై అధ్యయనాలు భారతీయులలో గణనీయమైన భాగం అని స్పష్టంగా తెలియజేస్తున్నాయి 
-             జనాభా సంకర్షణ చెందుతుంది, లావాదేవీలు చేస్తుంది మరియు డిజిటల్ మాధ్యమాల ద్వారా పనిచేస్తుంది. సహజంగా, 
-             నేర కార్యకలాపాల ఘటనలు పెరిగాయి. నిజానికి, క్రైమ్ ఇన్ ఇండియా 2022[3] ప్రకారం, 
-             నేషనల్ క్రైమ్ రికార్డ్స్ బ్యూరో యొక్క ప్రచురణలో 24.4% పెరుగుదల ఉంది 
-             2021తో పోలిస్తే సైబర్ క్రైమ్ కింద కేసుల నమోదు.
-`
-  : `व्यक्तिगत सांख्यिकीय रिपोर्टों[1] के अनुसार, भारत कथित तौर पर रहा है
-         लगभग 750 मिलियन इंटरनेट उपयोगकर्ताओं और 460 मिलियन उपयोगकर्ताओं का घर
-          सोशल मीडिया के विभिन्न प्लेटफ़ॉर्म, जो कुल का लगभग 30% के बराबर है
-           दुनिया में उपयोगकर्ता. इसके अलावा, हाल के स्वतंत्र अध्ययनों[2] के अनुसार, स्मार्टफोन
-            भारत में उपयोगकर्ताओं की संख्या लगभग 650 मिलियन थी। ये और अन्य
-             इस विषय पर अध्ययन से यह स्पष्ट होता है कि भारतीयों का एक बड़ा हिस्सा 
-             जनसंख्या डिजिटल माध्यमों से बातचीत, लेन-देन और संचालन करती है। सहज रूप में, 
-             आपराधिक गतिविधियों की घटनाएं बढ़ी हैं. दरअसल, क्राइम इन इंडिया 2022[3] के अनुसार, 
-             राष्ट्रीय अपराध रिकॉर्ड ब्यूरो के एक प्रकाशन के अनुसार, इसमें 24.4% की वृद्धि हुई है 
-             2021 की तुलना में साइबर अपराध के तहत मामलों का पंजीकरण।`}
+  ? 'బిల్లులోని ముఖ్యాంశాలు'
+  : 'विधेयक की मुख्य बातें'}   </h4>
+    <p className='bnsp7'><span style={{color:"#707070",marginRight:"10px",fontSize:"10px"}}><GoDotFill /></span>
+    {selectedLanguage === 'English'
+  ? `The Bharatiya Nagarik Suraksha Sanhita, 2023 (BNSS) seeks to replace the Criminal Procedure Code, 1973 (CrPC).  The CrPC provides for the procedure for arrest, prosecution, and bail.`
+  : selectedLanguage === 'Telugu'
+  ? `భారతీయ నాగరిక్ సురక్ష సంహిత, 2023 (BNSS) క్రిమినల్ ప్రొసీజర్ కోడ్, 1973 (CrPC)ని భర్తీ చేయడానికి ప్రయత్నిస్తుంది.  CrPC అరెస్టు, ప్రాసిక్యూషన్ మరియు బెయిల్ కోసం ప్రక్రియను అందిస్తుంది.`
+  : `भारतीय नागरिक सुरक्षा संहिता, 2023 (बीएनएसएस) आपराधिक प्रक्रिया संहिता, 1973 (सीआरपीसी) को प्रतिस्थापित करना चाहता है।  सीआरपीसी गिरफ्तारी, अभियोजन और जमानत की प्रक्रिया प्रदान करता है।`}
              </p>
-             <p className='bnsp7'>
+             <p className='bnsp7'><span style={{color:"#707070",marginRight:"10px",fontSize:"10px"}}><GoDotFill /></span>
              {selectedLanguage === 'English'
-  ? `For this very purpose, a new addition in the form of Section 2(39) of the BNS clearly states 
-             that all words or expressions with regards to technology and digital media in general, shall 
-             have the same meanings as those given in the Information Technology Act, 2002, as well as the
-              Bhartiya Nagarik Suraksha Sanhita, 2023. This will enable a much wider scope in terms of 
-              recognising various acts that fall under the ambit of an offence, thereby contributing to the
-               detection and deterrence of crime. Section 2(8) of the BNS states that documents now include
-                electronic and digital records.`
+  ? `BNSS mandates forensic investigation for offences punishable with seven years of imprisonment or more.  Forensic experts will visit crime scenes to collect forensic evidence and record the process. `
   : selectedLanguage === 'Telugu'
-  ? `ఈ ప్రయోజనం కోసం, BNS యొక్క సెక్షన్ 2(39) రూపంలో కొత్త అదనంగా స్పష్టంగా పేర్కొంది 
-             సాధారణంగా సాంకేతికత మరియు డిజిటల్ మీడియాకు సంబంధించి అన్ని పదాలు లేదా వ్యక్తీకరణలు 
-             ఇన్ఫర్మేషన్ టెక్నాలజీ చట్టం, 2002, అలాగే ది
-              భారతీయ నాగరిక్ సురక్ష సంహిత, 2023. ఇది పరంగా మరింత విస్తృత పరిధిని అనుమతిస్తుంది 
-              నేరం పరిధిలోకి వచ్చే వివిధ చర్యలను గుర్తించడం, తద్వారా నేరానికి దోహదం చేయడం
-               నేరాన్ని గుర్తించడం మరియు నిరోధించడం. BNS యొక్క సెక్షన్ 2(8) పత్రాలు ఇప్పుడు చేర్చబడిందని పేర్కొంది
-                ఎలక్ట్రానిక్ మరియు డిజిటల్ రికార్డులు.`
-  : `इसी उद्देश्य के लिए, बीएनएस की धारा 2(39) के रूप में एक नया परिवर्धन स्पष्ट रूप से कहा गया है 
-             कि सामान्यतः प्रौद्योगिकी और डिजिटल मीडिया के संबंध में सभी शब्द या अभिव्यक्तियाँ लागू होंगी 
-             वही अर्थ हैं जो सूचना प्रौद्योगिकी अधिनियम, 2002 में दिए गए हैं, साथ ही
-              भारतीय नागरिक सुरक्षा संहिता, 2023। इससे बहुत व्यापक दायरा संभव होगा 
-              विभिन्न कृत्यों को पहचानना जो अपराध के दायरे में आते हैं, जिससे इसमें योगदान मिलता है
-               अपराध का पता लगाना और निवारण करना। बीएनएस की धारा 2(8) में कहा गया है कि दस्तावेज़ों में अब शामिल हैं
-                इलेक्ट्रॉनिक और डिजिटल रिकॉर्ड।
-`}
+  ? `BNSS ఏడు సంవత్సరాల జైలు శిక్ష లేదా అంతకంటే ఎక్కువ శిక్ష విధించే నేరాలకు ఫోరెన్సిక్ విచారణను తప్పనిసరి చేస్తుంది.  ఫోరెన్సిక్ నిపుణులు నేరస్థలాలను సందర్శించి ఫోరెన్సిక్ ఆధారాలను సేకరించి ప్రక్రియను నమోదు చేస్తారు.`
+  : `बीएनएसएस सात साल या उससे अधिक की सजा वाले अपराधों के लिए फोरेंसिक जांच को अनिवार्य बनाता है।  फोरेंसिक विशेषज्ञ फोरेंसिक सबूत इकट्ठा करने और प्रक्रिया को रिकॉर्ड करने के लिए अपराध स्थलों का दौरा करेंगे।
+`
+}
              
       </p>
+
+      <p className='bnsp7'><span style={{color:"#707070",marginRight:"10px",fontSize:"10px"}}><GoDotFill /></span>
+             {selectedLanguage === 'English'
+  ? `All trials, inquiries, and proceedings may be held in electronic mode.  Production of electronic communication devices, likely to contain digital evidence, will be allowed for investigation, inquiry, or trial.`
+  : selectedLanguage === 'Telugu'
+  ? `అన్ని ట్రయల్స్, విచారణలు మరియు ప్రొసీడింగ్‌లను ఎలక్ట్రానిక్ మోడ్‌లో నిర్వహించవచ్చు.  ఎలక్ట్రానిక్ కమ్యూనికేషన్ పరికరాల ఉత్పత్తి, డిజిటల్ సాక్ష్యాలను కలిగి ఉండవచ్చు, దర్యాప్తు, విచారణ లేదా విచారణ కోసం అనుమతించబడుతుంది.`
+  : `सभी परीक्षण, पूछताछ और कार्यवाही इलेक्ट्रॉनिक मोड में आयोजित की जा सकती हैं।  इलेक्ट्रॉनिक संचार उपकरणों के उत्पादन, जिसमें डिजिटल साक्ष्य शामिल होने की संभावना है, को जांच, पूछताछ या परीक्षण के लिए अनुमति दी जाएगी।`
+}         
+      </p>
+      <p className='bnsp78'><span style={{color:"#707070",marginRight:"10px",fontSize:"10px"}}><GoDotFill /></span>
+             {selectedLanguage === 'English'
+  ? `If a proclaimed offender has absconded to evade trial and there is no immediate prospect of arresting him, the trial can be conducted and judgement pronounced in his absence.`
+  : selectedLanguage === 'Telugu'
+  ? `ప్రకటిత నేరస్థుడు విచారణ నుండి తప్పించుకోవడానికి పరారీలో ఉండి, అతడిని వెంటనే అరెస్టు చేసే అవకాశం లేకుంటే, అతను గైర్హాజరైనప్పుడు విచారణ నిర్వహించి తీర్పును ప్రకటించవచ్చు.`
+  : `यदि कोई घोषित अपराधी मुकदमे से बचने के लिए भाग गया है और उसे गिरफ्तार करने की तत्काल कोई संभावना नहीं है, तो उसकी अनुपस्थिति में मुकदमा चलाया जा सकता है और फैसला सुनाया जा सकता है।`
+}         
+      </p>
+      <p className='bnsp78'><span style={{color:"#707070",marginRight:"10px",fontSize:"10px"}}><GoDotFill /></span>
+             {selectedLanguage === 'English'
+  ? `Along with specimen signatures or handwriting, finger impressions and voice samples may be collected for investigation or proceedings.  Samples may be taken from a person who has not been arrested.`
+  : selectedLanguage === 'Telugu'
+  ? `నమూనా సంతకాలు లేదా చేతివ్రాతతో పాటు, విచారణ లేదా విచారణ కోసం వేలి ముద్రలు మరియు వాయిస్ నమూనాలను సేకరించవచ్చు.  అరెస్టు చేయని వ్యక్తి నుండి నమూనాలను తీసుకోవచ్చు.`
+  : `जांच या कार्यवाही के लिए नमूना हस्ताक्षर या लिखावट के साथ-साथ उंगलियों के निशान और आवाज के नमूने भी एकत्र किए जा सकते हैं।  ऐसे व्यक्ति से नमूने लिए जा सकते हैं जिसे गिरफ्तार नहीं किया गया है।`
+}         
+      </p>
+
+
       <h4 className='bnsp6'>
       {selectedLanguage === 'English'
-  ? 'Community Service as a Punishment'
+  ? 'Highlights of l'
   : selectedLanguage === 'Telugu'
-  ? 'శిక్షగా సంఘం సేవ'
-  : 'एक सज़ा के रूप में सामुदायिक सेवा'}      </h4>
+  ? 'బిల్లులోని ముఖ్యాంశాలు'
+  : 'विधेयक की मुख्य बातें'}      </h4>
       <p className='bnsp7'>
       {selectedLanguage === 'English'
   ? `As a new addition to the chapter on punishments, community service has been added as one of the 
@@ -1110,24 +1096,17 @@ const BnsPage = () => {
 
 <div class="columnN" style={{backgroundColor:"#002369"}}>
     <div className='bottonh4'>
-<h4 className='h43'>
-{selectedLanguage === 'English'
-  ? `The introduction of the BNS, for the most part, is a positive
-     decision to reinvent the IPC in a manner that fits the current social 
-     climate. It has made various significant changes, removing laws
-      that have colonial roots, which is archaic, and also certain provisions 
-      that hold no credible ground in today’s legal scenario.`
-  : selectedLanguage === 'Telugu'
-  ? `BNS పరిచయం, చాలా వరకు సానుకూలమైనది
-     ప్రస్తుత సామాజిక పరిస్థితులకు తగిన విధంగా IPCని పునరుద్ధరించాలనే నిర్ణయం 
-     వాతావరణం. ఇది వివిధ ముఖ్యమైన మార్పులను చేసింది, చట్టాలను తీసివేసింది
-      వలసవాద మూలాలను కలిగి ఉంటాయి, ఇది పురాతనమైనది మరియు కొన్ని నిబంధనలను కూడా కలిగి ఉంటుంది 
-      నేటి చట్టపరమైన దృష్టాంతంలో విశ్వసనీయమైన మైదానాన్ని కలిగి ఉండదు.`
-  : `अधिकांश भाग के लिए, बीएनएस का परिचय सकारात्मक है
-     वर्तमान सामाजिक व्यवस्था के अनुरूप आईपीसी को पुनः स्थापित करने का निर्णय 
-     जलवायु। इसने कानूनों को हटाते हुए कई महत्वपूर्ण बदलाव किए हैं
-      जिसकी जड़ें औपनिवेशिक हैं, जो पुरातन है, और कुछ प्रावधान भी हैं 
-      जिसका आज के कानूनी परिदृश्य में कोई विश्वसनीय आधार नहीं है।`} </h4>
+        <div className='bnssbox1'>
+<h4 className='bnsssh1' style={{padding:"15px"}} >
+Original Text
+ </h4>
+ <div style={{backgroundColor:"#efefef",}}>
+ <p style={{color:"blue",padding:"10px"}} className='bbbb' onClick={handleClick1}><BsFileEarmarkPdf style={{color:"red"}}/> Bill Text</p>
+ <p style={{color:"blue",}} className='bbbbb'onClick={handleClick2}><BsFileEarmarkPdf style={{color:"red"}}/> Standing Committee Report</p>
+
+ <p></p>
+ </div>
+ </div>
 
       
 </div>
@@ -1168,4 +1147,4 @@ const BnsPage = () => {
   )
 }
 
-export default BnsPage
+export default Bnss

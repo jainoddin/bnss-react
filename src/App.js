@@ -2,6 +2,7 @@ import React from 'react'
 import {  Route, Routes } from 'react-router-dom';
 import Home from './Components/Home';
 import Bns from './Components/Bns';
+import Bnss from './Components/Bnss';
 
 const App = () => {
   return (
@@ -10,6 +11,9 @@ const App = () => {
        <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/bns" element={<Bns />} />
+      <Route path="/bnss" element={<Bnss />} />
+
+      
 
 
       </Routes>
