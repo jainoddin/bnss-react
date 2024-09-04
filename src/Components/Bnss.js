@@ -318,220 +318,366 @@ const Bnss = () => {
 
                 <h4 className="bnsp6">
                   {selectedLanguage === "English"
-                    ? "Highlights of l"
+                    ? "Key Issues and Analysis"
                     : selectedLanguage === "Telugu"
-                    ? "బిల్లులోని ముఖ్యాంశాలు"
-                    : "विधेयक की मुख्य बातें"}{" "}
+                    ? "కీలక సమస్యలు మరియు విశ్లేషణ"
+                    : "प्रमुख मुद्दे और विश्लेषण"}{" "}
                 </h4>
-                <p className="bnsp7">
+                <p className="bnsp78">
+                <span
+                    style={{
+                      color: "#707070",
+                      marginRight: "10px",
+                      fontSize: "10px",
+                    }}
+                  >
+                    <GoDotFill />
+                  </span>
                   {selectedLanguage === "English"
-                    ? `As a new addition to the chapter on punishments, community service has been added as one of the 
-      punishments that may be given upon the conviction of an individual. It must also be noted that community 
-      service as a punishment, according to the Statement of Object and Reasons, is only for petty offences, and 
-      is therefore given in the BNS only under six offences as a means of punishment.`
+                    ? `The BNSS allows up to 15 days of police custody, which can be authorised in parts during the initial 40 or 60 days of the 60 or 90 days period of judicial custody.  This may lead to denial of bail for the entire period if the police has not exhausted the 15 days custody.`
                     : selectedLanguage === "Telugu"
-                    ? `శిక్షల అధ్యాయానికి కొత్త అదనంగా, సమాజ సేవ ఒకటిగా జోడించబడింది 
-      ఒక వ్యక్తి యొక్క నేరారోపణపై విధించే శిక్షలు. సంఘం కూడా గమనించాలి 
-      ఆబ్జెక్ట్ మరియు కారణాల స్టేట్‌మెంట్ ప్రకారం శిక్షగా సేవ, చిన్న నేరాలకు మాత్రమే, మరియు 
-      కాబట్టి BNSలో కేవలం ఆరు నేరాల క్రింద శిక్షా సాధనంగా ఇవ్వబడింది.`
-                    : `दण्ड संबंधी अध्याय में एक नये अध्याय के रूप में, सामुदायिक सेवा को भी इसमें से एक के रूप में जोड़ा गया है 
-      सज़ा जो किसी व्यक्ति के दोषी पाए जाने पर दी जा सकती है। यह भी ध्यान दिया जाना चाहिए कि समुदाय 
-      उद्देश्य और कारणों के कथन के अनुसार, सजा के रूप में सेवा केवल छोटे अपराधों के लिए है, और 
-      इसलिए सजा के साधन के रूप में बीएनएस में केवल छह अपराधों के तहत दिया जाता है।`}
-                </p>
-                <p className="bnsp7">
-                  {selectedLanguage === "English"
-                    ? ` Furthermore, a report of the Standing Committee[4] further recommended the insertion of a proper 
-      definition of community service as well as contouring the scope of this punishment to the Parliament.
-       However, this hasn’t been incorporated into the text of the Act as of now, with the laws being officially
-        enforced[5]. The lack of proper clarity with regards to community service could result in massive
-         judicial involvement in aiding the interpretation and setting of the law.`
-                    : selectedLanguage === "Telugu"
-                    ? `ఇంకా, స్టాండింగ్ కమిటీ[4] యొక్క నివేదిక సరైన చొప్పించడాన్ని మరింత సిఫార్సు చేసింది 
-      సమాజ సేవ యొక్క నిర్వచనం అలాగే పార్లమెంటుకు ఈ శిక్ష యొక్క పరిధిని ఆకృతి చేయడం.
-       అయితే, చట్టాలు అధికారికంగా ఉండటంతో ఇది ప్రస్తుతానికి చట్టం యొక్క పాఠంలో చేర్చబడలేదు
-        అమలు[5]. కమ్యూనిటీ సేవకు సంబంధించి సరైన స్పష్టత లేకపోవడం భారీ ఫలితానికి దారి తీస్తుంది
-         చట్టం యొక్క వివరణ మరియు అమరికకు సహాయం చేయడంలో న్యాయపరమైన ప్రమేయం.`
-                    : `इसके अलावा, स्थायी समिति की एक रिपोर्ट[4] ने एक उचित सम्मिलन की सिफारिश की 
-      सामुदायिक सेवा की परिभाषा के साथ-साथ संसद को इस सज़ा का दायरा तय करना।
-       हालाँकि, अभी तक कानून आधिकारिक होने के कारण इसे अधिनियम के पाठ में शामिल नहीं किया गया है
-        लागू[5]। सामुदायिक सेवा के संबंध में उचित स्पष्टता की कमी के परिणामस्वरूप बड़े पैमाने पर परिणाम हो सकते हैं
-         कानून की व्याख्या और स्थापना में सहायता में न्यायिक भागीदारी।`}
+                    ? `BNSS 15 రోజుల వరకు పోలీసు కస్టడీని అనుమతిస్తుంది, ఇది 60 లేదా 90 రోజుల జ్యుడీషియల్ కస్టడీలో ప్రారంభ 40 లేదా 60 రోజులలో భాగాలుగా అధికారం పొందవచ్చు.  దీంతో పోలీసులు 15 రోజుల కస్టడీని పూర్తి చేయకపోతే మొత్తం కాలానికి బెయిల్ తిరస్కరణకు దారితీయవచ్చు.`
+                    : `बीएनएसएस 15 दिनों तक की पुलिस हिरासत की अनुमति देता है, जिसे न्यायिक हिरासत की 60 या 90 दिनों की अवधि के शुरुआती 40 या 60 दिनों के दौरान भागों में अधिकृत किया जा सकता है।  इससे अगर पुलिस ने 15 दिन की हिरासत अवधि समाप्त नहीं की है तो पूरी अवधि के लिए जमानत से इनकार किया जा सकता है।`}
                 </p>
 
-                <h4 className="bnsp6">
+
+
+
+
+
+
+
+
+
+
+
+                <p className="bnsp78">
+                <span
+                    style={{
+                      color: "#707070",
+                      marginRight: "10px",
+                      fontSize: "10px",
+                    }}
+                  >
+                    <GoDotFill />
+                  </span>
                   {selectedLanguage === "English"
-                    ? "Use of Inclusive Language"
+                    ? `The powers to attach property from proceeds of crime does not have safeguards provided in the Prevention of Money Laundering Act.`
                     : selectedLanguage === "Telugu"
-                    ? "సమ్మిళిత భాష యొక్క ఉపయోగం"
-                    : "समावेशी भाषा का प्रयोग"}
+                    ? `నేరం ద్వారా వచ్చే ఆదాయం నుండి ఆస్తిని అటాచ్ చేసే అధికారాలు మనీలాండరింగ్ నిరోధక చట్టంలో అందించబడిన రక్షణలను కలిగి లేవు.`
+                    : `अपराध की आय से संपत्ति संलग्न करने की शक्तियों के लिए धन शोधन निवारण अधिनियम में सुरक्षा उपाय प्रदान नहीं किए गए हैं।`}
+                </p>
+
+
+                <p className="bnsp78">
+                <span
+                    style={{
+                      color: "#707070",
+                      marginRight: "10px",
+                      fontSize: "10px",
+                    }}
+                  >
+                    <GoDotFill />
+                  </span>
+                  {selectedLanguage === "English"
+                    ? `The CrPC provides for bail for an accused who has been detained for half the maximum imprisonment for the offence.   The BNSS denies this facility for anyone facing multiple charges.  As many cases involve charges under multiple sections, this may limit such bail. `
+                    : selectedLanguage === "Telugu"
+                    ? `CrPC నేరానికి గరిష్టంగా సగం జైలు శిక్ష విధించబడిన నిందితుడికి బెయిల్ అందిస్తుంది.   బహుళ ఆరోపణలు ఎదుర్కొంటున్న ఎవరికైనా BNSS ఈ సౌకర్యాన్ని తిరస్కరించింది.  అనేక కేసులు అనేక సెక్షన్ల కింద అభియోగాలను కలిగి ఉన్నందున, ఇది అటువంటి బెయిల్‌ను పరిమితం చేయవచ్చు.`
+                    : `सीआरपीसी उस आरोपी के लिए जमानत का प्रावधान करती है जिसे अपराध के लिए अधिकतम कारावास की आधी सजा के लिए हिरासत में लिया गया हो।   बीएनएसएस कई आरोपों का सामना करने वाले किसी भी व्यक्ति के लिए इस सुविधा से इनकार करता है।  चूँकि कई मामलों में कई धाराओं के तहत आरोप शामिल होते हैं, इससे ऐसी जमानत सीमित हो सकती है।`}
+                </p>
+
+
+                <p className="bnsp78">
+                <span
+                    style={{
+                      color: "#707070",
+                      marginRight: "10px",
+                      fontSize: "10px",
+                    }}
+                  >
+                    <GoDotFill />
+                  </span>
+                  {selectedLanguage === "English"
+                    ? `The use of handcuffs is permitted in a range of cases including economic offences, contradicting Supreme Court directions.`
+                    : selectedLanguage === "Telugu"
+                    ? `ఆర్థిక నేరాలు, సుప్రీం కోర్టు ఆదేశాలకు విరుద్ధమైన కేసుల పరిధిలో హ్యాండ్‌కఫ్‌ల ఉపయోగం అనుమతించబడుతుంది.`
+                    : `सुप्रीम कोर्ट के निर्देशों के विपरीत, आर्थिक अपराधों सहित कई मामलों में हथकड़ी के उपयोग की अनुमति है।`}
+                </p>
+
+
+                <p className="bnsp78">
+                <span
+                    style={{
+                      color: "#707070",
+                      marginRight: "10px",
+                      fontSize: "10px",
+                    }}
+                  >
+                    <GoDotFill />
+                  </span>
+                  {selectedLanguage === "English"
+                    ? `The BNSS allows evidence collected by retired or transferred investigating officers to be presented by their successors.   This violates normal rules of evidence when the author of the document can be cross examined.`
+                    : selectedLanguage === "Telugu"
+                    ? `BNSS రిటైర్డ్ లేదా బదిలీ చేయబడిన దర్యాప్తు అధికారులు సేకరించిన సాక్ష్యాలను వారి వారసులు సమర్పించడానికి అనుమతిస్తుంది.   పత్రం యొక్క రచయిత క్రాస్ ఎగ్జామినేషన్ చేసినప్పుడు ఇది సాక్ష్యం యొక్క సాధారణ నియమాలను ఉల్లంఘిస్తుంది.`
+                    : `बीएनएसएस सेवानिवृत्त या स्थानांतरित जांच अधिकारियों द्वारा एकत्र किए गए साक्ष्य को उनके उत्तराधिकारियों द्वारा प्रस्तुत करने की अनुमति देता है।   यह साक्ष्य के सामान्य नियमों का उल्लंघन करता है जब दस्तावेज़ के लेखक से जिरह की जा सकती है।`}
+                </p>
+
+
+                <p className="bnsp78">
+                <span
+                    style={{
+                      color: "#707070",
+                      marginRight: "10px",
+                      fontSize: "10px",
+                    }}
+                  >
+                    <GoDotFill />
+                  </span>
+                  {selectedLanguage === "English"
+                    ? `Recommendations of high level committees on changes to the CrPC such as reforms in sentencing guidelines and codifying rights of the accused have not been incorporated in the BNSS.`
+                    : selectedLanguage === "Telugu"
+                    ? `శిక్షాస్మృతి మార్గదర్శకాలలో సంస్కరణలు మరియు నిందితుల హక్కులను క్రోడీకరించడం వంటి CrPCలో మార్పులపై ఉన్నత స్థాయి కమిటీల సిఫార్సులు BNSSలో పొందుపరచబడలేదు.`
+                    : `सीआरपीसी में बदलावों पर उच्च स्तरीय समितियों की सिफारिशें जैसे सजा दिशानिर्देशों में सुधार और अभियुक्तों के अधिकारों को संहिताबद्ध करना बीएनएसएस में शामिल नहीं किया गया है।`}
+                </p>
+                <h4 className="bnsp5">
+                  {selectedLanguage === "English"
+                    ? `PART A: HIGHLIGHTS OF THE BILL`
+                    : selectedLanguage === "Telugu"
+                    ? `పార్ట్ A: బిల్లు యొక్క ముఖ్యాంశాలు`
+                    : "भाग ए: विधेयक की मुख्य बातें"}
                 </h4>
-                <p className="bnsp7">
-                  {selectedLanguage === "English"
-                    ? `As a first, the BNS uses the term transgender under Section 2(10), under the definition of “gender”,
- which was absent in the IPC. In general, various provisions have been made gender neutral, such as the
-  offence of voyeurism, having been defined and punished under Section 77 of the BNS. However, it must be 
-  noted that Section 77, along with other provisions, have incorporated the gender neutrality of the perpetrator,
-   and not the victim. Therefore, for example, even though a woman may now be convicted for the offence of
-    voyeurism, a man will never be able to complain about voyeuristic behaviour, an area where the BNS could’ve
-     legislated upon.`
-                    : selectedLanguage === "Telugu"
-                    ? `మొదటిగా, BNS సెక్షన్ 2(10) కింద లింగమార్పిడి అనే పదాన్ని “లింగం” నిర్వచనం కింద ఉపయోగిస్తుంది,
- IPC లో లేనిది. సాధారణంగా, వివిధ నిబంధనలు లింగ తటస్థంగా చేయబడ్డాయి, వంటివి
-  BNS యొక్క సెక్షన్ 77 కింద నిర్వచించబడిన మరియు శిక్షించబడిన voyeurism యొక్క నేరం. అయితే, అది ఉండాలి 
-  సెక్షన్ 77, ఇతర నిబంధనలతో పాటు, నేరస్థుడి లింగ తటస్థతను పొందుపరిచింది,
-   మరియు బాధితుడు కాదు. అందువలన, ఉదాహరణకు, ఒక మహిళ ఇప్పుడు నేరం కోసం దోషిగా ఉండవచ్చు కూడా
-    voyeurism, ఒక మనిషి voyeuristic ప్రవర్తన గురించి ఫిర్యాదు చేయలేరు, BNS చేయగల ప్రాంతం
-     మీద శాసనం.`
-                    : `सबसे पहले, बीएनएस धारा 2(10) के तहत "लिंग" की परिभाषा के तहत ट्रांसजेंडर शब्द का उपयोग करता है।
- जो आईपीसी में अनुपस्थित था. सामान्य तौर पर, विभिन्न प्रावधानों को लिंग तटस्थ बनाया गया है, जैसे कि
-  ताक-झांक का अपराध, बीएनएस की धारा 77 के तहत परिभाषित और दंडित किया गया है। हालाँकि, यह होना ही चाहिए 
-  नोट किया गया कि धारा 77 में, अन्य प्रावधानों के साथ, अपराधी की लिंग तटस्थता को शामिल किया गया है,
-   और पीड़ित नहीं. इसलिए, उदाहरण के लिए, भले ही एक महिला को अब अपराध के लिए दोषी ठहराया जा सकता है
-    ताक-झांक, एक आदमी कभी भी ताक-झांक वाले व्यवहार के बारे में शिकायत नहीं कर पाएगा, एक ऐसा क्षेत्र जहां बीएनएस हो सकता था
-     पर कानून बनाया.`}
-                </p>
-                <p
-                  className={
-                    selectedLanguage === "Telugu"
-                      ? "bnsp78-telugu"
-                      : selectedLanguage === "Hindi"
-                      ? "bnsp78-telugu"
-                      : "bnsp78"
-                  }
-                >
-                  {selectedLanguage === "English"
-                    ? `
-    Similarly, a lot of offences, such as rape, have still been gendered, 
-    wherein only a woman can be a victim. This excludes transgenders from availing themselves of 
-    protection under various sexual offences, leaving their inclusion under Section 2(10) superficial.`
-                    : selectedLanguage === "Telugu"
-                    ? `అదేవిధంగా, అత్యాచారం వంటి చాలా నేరాలు ఇప్పటికీ లింగభేదం చేయబడ్డాయి, 
-    ఇందులో ఒక మహిళ మాత్రమే బాధితురాలు కావచ్చు. ఇది లింగమార్పిడి చేయని వ్యక్తులు తమను తాము పొందకుండా మినహాయిస్తుంది 
-    వివిధ లైంగిక నేరాల కింద రక్షణ, సెక్షన్ 2(10) కింద వాటిని చేర్చడం ఉపరితలం.`
-                    : `इसी तरह, बलात्कार जैसे बहुत से अपराध अभी भी लिंग आधारित हैं, 
-    जिसमें सिर्फ एक महिला ही शिकार हो सकती है. यह ट्रांसजेंडरों को इसका लाभ उठाने से रोकता है 
-    विभिन्न यौन अपराधों के तहत सुरक्षा, धारा 2(10) के तहत उन्हें शामिल करना सतही है।`}
-                </p>
-                <p
-                  className={
-                    selectedLanguage === "Telugu"
-                      ? "bnsp78-telugu"
-                      : selectedLanguage === "Hindi"
-                      ? "bnsp78-telugu"
-                      : "bnsp78"
-                  }
-                >
-                  {selectedLanguage === "English"
-                    ? `However, it cannot be said that gender neutrality in the context of victims was not taken into consideration at all since, under Section 96, the BNS uses the word child, replacing the words minor girls in the erstwhile Section 366A of the IPC.`
-                    : selectedLanguage === "Telugu"
-                    ? `అయితే, సెక్షన్ 96 ప్రకారం, IPC యొక్క పూర్వపు సెక్షన్ 366Aలోని మైనర్ బాలికల పదాల స్థానంలో BNS చైల్డ్ అనే పదాన్ని ఉపయోగిస్తుంది కాబట్టి, బాధితుల సందర్భంలో లింగ తటస్థతను పరిగణనలోకి తీసుకోలేదని చెప్పలేము.`
-                    : "हालाँकि, यह नहीं कहा जा सकता है कि पीड़ितों के संदर्भ में लिंग तटस्थता पर बिल्कुल भी ध्यान नहीं दिया गया था, क्योंकि धारा 96 के तहत, बीएनएस आईपीसी की पूर्ववर्ती धारा 366 ए में नाबालिग लड़कियों के शब्द की जगह बच्चा शब्द का उपयोग करता है।"}
-                </p>
                 <h4 className="bnsp6">
                   {selectedLanguage === "English"
-                    ? "Snatching as a Separate Offence"
+                    ? "Context"
                     : selectedLanguage === "Telugu"
-                    ? "స్నాచింగ్ అనేది ప్రత్యేక నేరంగా పరిగణించబడుతుంది"
-                    : "छीनना एक अलग अपराध के रूप में"}
-                </h4>
-                <p
-                  className={
-                    selectedLanguage === "Telugu" ? "bnsp78-telugu" : "bnsp78"
-                  }
-                >
-                  {selectedLanguage === "English"
-                    ? ` Section 304 of the BNS provides, for the first time, snatching as an offence distinct from theft. 
-    Independent reports suggest that snatching is a high-frequency crime, reportedly[6] being conducted more
-     than 5000 times per day in Delhi alone. It is not only based on frequency, but it also delineates 
-     from regular theft in many ways, which justifies its separation. Snatching is a subset of theft 
-     wherein movable property is taken by force or quickness of action from a person. Unlike theft, 
-     where the accused may employ deceitful means and take away property even without the knowledge 
-     of the person who owns it, snatching always involves the victim taking cognizance of the action
-      at the time of commission itself,and it may even be accompanied with hurt or violence in order
-       to give effect to the snatching. The maximum punishment for snatching has also been set at three
-        years instead of seven years for theft.`
-                    : selectedLanguage === "Telugu"
-                    ? `BNS యొక్క సెక్షన్ 304, మొదటిసారిగా, దొంగతనం నుండి భిన్నమైన నేరంగా స్నాచింగ్‌ని అందిస్తుంది. 
-    స్వతంత్ర నివేదికలు స్నాచింగ్ అనేది అధిక-ఫ్రీక్వెన్సీ నేరమని సూచిస్తున్నాయి, నివేదించబడిన[6] ఎక్కువగా నిర్వహించబడుతున్నాయి
-     ఒక్క ఢిల్లీలోనే రోజుకు 5000 సార్లు. ఇది ఫ్రీక్వెన్సీ ఆధారంగా మాత్రమే కాకుండా, ఇది వివరిస్తుంది 
-     అనేక విధాలుగా సాధారణ దొంగతనం నుండి, దాని విభజనను సమర్థిస్తుంది. స్నాచింగ్ అనేది దొంగతనం యొక్క ఉపసమితి 
-     ఒక వ్యక్తి నుండి బలవంతంగా లేదా త్వరిత చర్య ద్వారా కదిలే ఆస్తి తీసుకోబడుతుంది. దొంగతనం కాకుండా, 
-     నిందితుడు మోసపూరిత మార్గాలను ఉపయోగించుకోవచ్చు మరియు వారికి తెలియకుండానే ఆస్తిని తీసుకోవచ్చు 
-     దానిని కలిగి ఉన్న వ్యక్తి యొక్క, స్నాచింగ్‌లో ఎల్లప్పుడూ బాధితుడు చర్య గురించి తెలుసుకోవడం జరుగుతుంది
-      కమీషన్ సమయంలోనే,  మరియు అది క్రమంలో గాయం లేదా హింసతో కూడి ఉండవచ్చు
-       స్నాచింగ్‌కు ప్రభావం చూపడానికి. స్నాచింగ్‌కు గరిష్ట శిక్షను కూడా మూడుగా నిర్ణయించారు
-        దొంగతనానికి ఏడేళ్ల బదులు సంవత్సరాలు.`
-                    : `बीएनएस की धारा 304, पहली बार, चोरी से अलग अपराध के रूप में छीनने का प्रावधान करती है। 
-    स्वतंत्र रिपोर्टों से पता चलता है कि स्नैचिंग एक उच्च आवृत्ति वाला अपराध है, कथित तौर पर [6] अधिक बार किया जा रहा है
-     अकेले दिल्ली में प्रति दिन 5000 से अधिक बार। यह न केवल आवृत्ति पर आधारित है, बल्कि यह रेखांकन भी करता है 
-     कई मायनों में नियमित चोरी से, जो इसके अलगाव को उचित ठहराता है। छीनना चोरी का एक उपसमूह है 
-     जिसमें चल संपत्ति किसी व्यक्ति से बलपूर्वक या कार्रवाई की शीघ्रता से ली जाती है। चोरी के विपरीत, 
-     जहां आरोपी धोखेबाज तरीकों का इस्तेमाल कर सकता है और जानकारी के बिना भी संपत्ति छीन सकता है 
-     जिस व्यक्ति का यह मालिक है, छीनने में हमेशा पीड़ित को कार्रवाई का संज्ञान लेना शामिल होता है
-      कमीशन के समय ही, और इसके साथ चोट या हिंसा भी हो सकती है
-       छीनाझपटी को प्रभाव देने के लिए. स्नैचिंग के लिए अधिकतम सज़ा भी तीन निर्धारित की गई है
-        चोरी के लिए सात वर्ष के स्थान पर वर्ष।`}
-                </p>
-                <h4 className="bnsp6">
-                  {selectedLanguage === "English"
-                    ? "Provision Related to Mob Lynching"
-                    : selectedLanguage === "Telugu"
-                    ? "మాబ్ లిన్చింగ్‌కు సంబంధించిన నిబంధన"
-                    : "मॉब लिंचिंग से संबंधित प्रावधान"}{" "}
+                    ? "సందర్భం"
+                    : "प्रसंग"}
                 </h4>
                 <p className="bnsp78">
                   {selectedLanguage === "English"
-                    ? `India has witnessed various cases[7] of deaths caused by groups of people motivated
-     by religion and caste, among other factors. Specific data related to mob lynchings 
-     in particular is difficult to obtain, primarily because the National Crime Records 
-     Bureau does not maintain any, combined with the fact that police and public order are
-      State subjects, for which no centralised data is available[8].`
+                    ? `The Code of Criminal Procedure, 1973 (CrPC) is a procedural law established for the administration of the Indian Penal Code, 1860 (IPC).  It governs the procedure for investigation, arrest, prosecution, and bail for offences.  The CrPC was first passed in 1861 to address the problem of multiplicity of legal systems in India.[1]  Since then it has been revised on multiple occasions.  In 1973, the erstwhile act was repealed and replaced by the existing CrPC, and changes like anticipatory bail were introduced.[2]  It was amended in 2005 to add changes such as provisions for plea bargaining and rights of arrested persons.[3] `
                     : selectedLanguage === "Telugu"
-                    ? `ప్రేరేపిత వ్యక్తుల సమూహాల వల్ల సంభవించే అనేక మరణాల[7] కేసులను భారతదేశం చూసింది
-     మతం మరియు కులం ద్వారా, ఇతర కారకాలతో పాటు. మాబ్ లిన్చింగ్‌లకు సంబంధించిన నిర్దిష్ట డేటా 
-     ముఖ్యంగా నేషనల్ క్రైమ్ రికార్డ్స్ కారణంగా పొందడం కష్టం 
-     బ్యూరో ఏదీ నిర్వహించదు, పోలీసు మరియు పబ్లిక్ ఆర్డర్ అనే వాస్తవంతో కలిపి
-      రాష్ట్ర సబ్జెక్ట్‌లు, వీటికి కేంద్రీకృత డేటా అందుబాటులో లేదు[8].
-`
-                    : `भारत में प्रेरित लोगों के समूहों के कारण होने वाली मौतों के विभिन्न मामले [7] देखे गए हैं
-     अन्य कारकों के अलावा धर्म और जाति के आधार पर। मॉब लिंचिंग से संबंधित विशिष्ट डेटा 
-     विशेष रूप से राष्ट्रीय अपराध रिकॉर्ड प्राप्त करना कठिन है 
-     ब्यूरो इस तथ्य के साथ संयुक्त रूप से पुलिस और सार्वजनिक व्यवस्था का कोई रखरखाव नहीं करता है
-      राज्य के विषय, जिनके लिए कोई केंद्रीकृत डेटा उपलब्ध नहीं है[8]।`}
+                    ? `క్రిమినల్ ప్రొసీజర్ కోడ్, 1973 (CrPC) అనేది భారతీయ శిక్షాస్మృతి, 1860 (IPC) నిర్వహణ కోసం ఏర్పాటు చేయబడిన విధానపరమైన చట్టం.  ఇది నేరాలకు సంబంధించి విచారణ, అరెస్టు, ప్రాసిక్యూషన్ మరియు బెయిల్ కోసం ప్రక్రియను నియంత్రిస్తుంది.  CrPC భారతదేశంలోని అనేక న్యాయ వ్యవస్థల సమస్యను పరిష్కరించడానికి 1861లో మొదటిసారి ఆమోదించబడింది.[1]  అప్పటి నుండి ఇది అనేక సందర్భాల్లో సవరించబడింది.  1973లో, పూర్వపు చట్టం రద్దు చేయబడింది మరియు ప్రస్తుత CrPC ద్వారా భర్తీ చేయబడింది మరియు ముందస్తు బెయిల్ వంటి మార్పులు ప్రవేశపెట్టబడ్డాయి.[2]  2005లో ప్లీ బేరసారాలకు సంబంధించిన నిబంధనలు మరియు అరెస్టయిన వ్యక్తుల హక్కుల వంటి మార్పులను జోడించడానికి ఇది సవరించబడింది.[3]`
+                    : `दंड प्रक्रिया संहिता, 1973 (सीआरपीसी) भारतीय दंड संहिता, 1860 (आईपीसी) के प्रशासन के लिए स्थापित एक प्रक्रियात्मक कानून है।  यह अपराधों की जांच, गिरफ्तारी, अभियोजन और जमानत की प्रक्रिया को नियंत्रित करता है।  भारत में कानूनी प्रणालियों की बहुलता की समस्या का समाधान करने के लिए सीआरपीसी पहली बार 1861 में पारित किया गया था।[1]  तब से इसे कई मौकों पर संशोधित किया गया है।  1973 में, तत्कालीन अधिनियम को निरस्त कर दिया गया और मौजूदा सीआरपीसी द्वारा प्रतिस्थापित किया गया, और अग्रिम जमानत जैसे बदलाव पेश किए गए।[2]  2005 में प्ली बार्गेनिंग के प्रावधानों और गिरफ्तार व्यक्तियों के अधिकारों जैसे बदलावों को जोड़ने के लिए इसमें संशोधन किया गया था।[3]`}
+                </p>
+                <p
+                  className="bnsp78"
+                >
+                  {selectedLanguage === "English"
+                    ? `Over the years, the Supreme Court has interpreted the CrPC in varied ways and revised its application.  These include: (i) mandating the registration of an FIR if the complaint relates to a cognisable offence, (ii) making arrests an exception when the punishment is less than seven years of imprisonment, (iii) ensuring bail for bailable offence is an absolute and in-defeasible right and no discretion is exercised in such matters.4  The Court has also ruled on procedural aspects such as establishing guidelines for custodial interrogations and emphasising the importance of speedy trials.[4]   However, the criminal justice system continues to face challenges like case backlogs, trial delays, and concerns about treatment of underprivileged groups.[5]`
+                    : selectedLanguage === "Telugu"
+                    ? `సంవత్సరాలుగా, సుప్రీంకోర్టు CrPCని వివిధ మార్గాల్లో వివరించింది మరియు దాని దరఖాస్తును సవరించింది.  వీటిలో ఇవి ఉన్నాయి: (i) ఫిర్యాదు గుర్తించదగిన నేరానికి సంబంధించినది అయితే ఎఫ్‌ఐఆర్ నమోదును తప్పనిసరి చేయడం, (ii) ఏడేళ్ల కంటే తక్కువ జైలుశిక్ష ఉన్నప్పుడు అరెస్టులకు మినహాయింపు ఇవ్వడం, (iii) బెయిలబుల్ నేరానికి బెయిల్‌ను ఖచ్చితంగా నిర్ధారించడం మరియు అటువంటి విషయాలలో నిలదీయలేని హక్కు మరియు విచక్షణ ఉండదు.4 కస్టోడియల్ ఇంటరాగేషన్‌ల కోసం మార్గదర్శకాలను ఏర్పాటు చేయడం మరియు త్వరిత విచారణల ప్రాముఖ్యతను నొక్కి చెప్పడం వంటి విధానపరమైన అంశాలపై కూడా కోర్టు తీర్పునిచ్చింది.[4]   ఏది ఏమైనప్పటికీ, నేర న్యాయ వ్యవస్థ కేసుల బ్యాక్‌లాగ్‌లు, విచారణ జాప్యాలు మరియు అణగారిన సమూహాల పట్ల ఆందోళనలు వంటి సవాళ్లను ఎదుర్కొంటూనే ఉంది.[5]`
+                    : `वर्षों से, सुप्रीम कोर्ट ने सीआरपीसी की विभिन्न तरीकों से व्याख्या की है और इसके आवेदन को संशोधित किया है।  इनमें शामिल हैं: (i) यदि शिकायत संज्ञेय अपराध से संबंधित है तो एफआईआर दर्ज करना अनिवार्य है, (ii) सात साल से कम कारावास की सजा होने पर गिरफ्तारी को अपवाद बनाना, (iii) जमानती अपराध के लिए जमानत सुनिश्चित करना पूर्ण है और अक्षम्य अधिकार और ऐसे मामलों में किसी विवेक का प्रयोग नहीं किया जाता है।4 न्यायालय ने हिरासत में पूछताछ के लिए दिशानिर्देश स्थापित करने और त्वरित सुनवाई के महत्व पर जोर देने जैसे प्रक्रियात्मक पहलुओं पर भी फैसला सुनाया है।[4]   हालाँकि, आपराधिक न्याय प्रणाली को लंबित मामलों, मुकदमे में देरी और वंचित समूहों के उपचार के बारे में चिंताओं जैसी चुनौतियों का सामना करना पड़ रहा है।[5]`}
+                </p>
+                <p
+                  className="bnsp78"
+                >
+                  {selectedLanguage === "English"
+                    ? `The Bharatiya Nagarik Suraksha Sanhita, 2023 (BNSS) was introduced on August 11, 2023 to replace the CrPC.  It amends provisions on bail, expands the scope of property seizure, and alters powers of police and Magistrates.  The Bill has been examined by the Standing Committee on Home Affairs.  `
+                    : selectedLanguage === "Telugu"
+                    ? `CrPC స్థానంలో భారతీయ నాగరిక్ సురక్ష సంహిత, 2023 (BNSS) ఆగస్టు 11, 2023న ప్రవేశపెట్టబడింది.  ఇది బెయిల్‌పై నిబంధనలను సవరిస్తుంది, ఆస్తి స్వాధీనం పరిధిని విస్తరిస్తుంది మరియు పోలీసు మరియు మేజిస్ట్రేట్‌ల అధికారాలను మారుస్తుంది.  ఈ బిల్లును హోం వ్యవహారాల స్టాండింగ్ కమిటీ పరిశీలించింది.`
+                    : "भारतीय नागरिक सुरक्षा संहिता, 2023 (बीएनएसएस) को सीआरपीसी को बदलने के लिए 11 अगस्त, 2023 को पेश किया गया था।  यह जमानत के प्रावधानों में संशोधन करता है, संपत्ति जब्ती का दायरा बढ़ाता है और पुलिस और मजिस्ट्रेट की शक्तियों में बदलाव करता है।  विधेयक की जांच गृह मामलों की स्थायी समिति द्वारा की गई है।"}
+                </p>
+                <h4 className="bnsp6">
+                  {selectedLanguage === "English"
+                    ? "Key Features"
+                    : selectedLanguage === "Telugu"
+                    ? "కీ ఫీచర్లు"
+                    : "प्रमुख विशेषताऐं"}
+                </h4>
+                <p
+                  className="bnsp78"
+                >
+                  {selectedLanguage === "English"
+                    ? `The CrPC governs the procedural aspects of criminal justice in India.  The key features of the Act include:`
+                    : selectedLanguage === "Telugu"
+                    ? `CrPC భారతదేశంలో నేర న్యాయం యొక్క విధానపరమైన అంశాలను నియంత్రిస్తుంది.  చట్టం యొక్క ముఖ్య లక్షణాలు:`
+                    : `सीआरपीसी भारत में आपराधिक न्याय के प्रक्रियात्मक पहलुओं को नियंत्रित करती है।  अधिनियम की प्रमुख विशेषताओं में शामिल हैं:`}
+                </p>
+                <p className="bnsp78">
+                <span
+                    style={{
+                      color: "#707070",
+                      marginRight: "10px",
+                      fontSize: "10px",
+                    }}
+                  >
+                    <GoDotFill />
+                  </span>
+                  {selectedLanguage === "English"
+                    ? `Separation of offences:  The CrPC classifies offences into two categories: cognisable and non-cognisable.  Cognisable offences are those in which the police can arrest and initiate an investigation without a warrant.  Non-cognisable offences require a warrant, and in some cases, a complaint by the victim or a third party.`
+                    : selectedLanguage === "Telugu"
+                    ? `నేరాల విభజన: CrPC నేరాలను రెండు వర్గాలుగా వర్గీకరిస్తుంది: గుర్తించదగిన మరియు నాన్-కాగ్నిసబుల్.  వారెంట్ లేకుండానే పోలీసులు అరెస్టు చేసి దర్యాప్తు ప్రారంభించే వాటిని కాగ్నిజబుల్ నేరాలు అంటారు.  నాన్-కాగ్నిసబుల్ నేరాలకు వారెంట్ మరియు కొన్ని సందర్భాల్లో, బాధితుడు లేదా మూడవ పక్షం ఫిర్యాదు అవసరం.`
+                    : `अपराधों का पृथक्करण: सीआरपीसी अपराधों को दो श्रेणियों में वर्गीकृत करती है: संज्ञेय और गैर-संज्ञेय।  संज्ञेय अपराध वे होते हैं जिनमें पुलिस बिना वारंट के गिरफ्तार कर सकती है और जांच शुरू कर सकती है।  गैर-संज्ञेय अपराधों के लिए वारंट की आवश्यकता होती है, और कुछ मामलों में, पीड़ित या तीसरे पक्ष की शिकायत की आवश्यकता होती है।`}
+                </p>
+
+                <p className="bnsp78">
+                <span
+                    style={{
+                      color: "#707070",
+                      marginRight: "10px",
+                      fontSize: "10px",
+                    }}
+                  >
+                    <GoDotFill />
+                  </span>
+                  {selectedLanguage === "English"
+                    ? `Nature of offences:  The CrPC deals with various types of criminal offences, ranging from traffic violations to murder.  It distinguishes between bailable and non-bailable offences, specifying the offences for which an accused has the right to bail from police custody. `
+                    : selectedLanguage === "Telugu"
+                    ? `నేరాల స్వభావం: CrPC ట్రాఫిక్ ఉల్లంఘనల నుండి హత్య వరకు వివిధ రకాల క్రిమినల్ నేరాలతో వ్యవహరిస్తుంది.  ఇది బెయిలబుల్ మరియు నాన్-బెయిలబుల్ నేరాల మధ్య తేడాను చూపుతుంది, నిందితుడికి పోలీసు కస్టడీ నుండి బెయిల్ పొందే హక్కు ఉన్న నేరాలను పేర్కొంటుంది.`
+                    : `अपराधों की प्रकृति: सीआरपीसी यातायात उल्लंघन से लेकर हत्या तक विभिन्न प्रकार के आपराधिक अपराधों से निपटती है।  यह जमानती और गैर-जमानती अपराधों के बीच अंतर करता है, उन अपराधों को निर्दिष्ट करता है जिनके लिए आरोपी को पुलिस हिरासत से जमानत का अधिकार है।`}
                 </p>
                 <p className="bnsp78">
                   {selectedLanguage === "English"
-                    ? `However, through an amendment adding to the provision of murder under Section 103 of the BNS,
-     any murder committed by a group of five or more people, specifically based on conditions like
-      religion, caste or community, place of birth, personal belief, etc., is now distinctly punishable 
-      with death or life imprisonment with a fine, just like how a murder is punished. This is a 
-      breakthrough addition to the BNS in light of the incidents of lynching that have been surfacing
-       over the years and is expected to act as a potent deterrent against any such incidents in the future.`
+                    ? `The BNSS retains most of the provisions of the CrPC.   Key changes proposed include:`
                     : selectedLanguage === "Telugu"
-                    ? `అయితే, BNS సెక్షన్ 103 కింద హత్యా నిబంధనకు జోడించిన సవరణ ద్వారా,
-     ఐదు లేదా అంతకంటే ఎక్కువ మంది వ్యక్తుల సమూహం చేసిన ఏదైనా హత్య, ప్రత్యేకంగా వంటి పరిస్థితుల ఆధారంగా
-      మతం, కులం లేదా సంఘం, పుట్టిన ప్రదేశం, వ్యక్తిగత నమ్మకం మొదలైనవి ఇప్పుడు స్పష్టంగా శిక్షార్హమైనవి 
-      ఒక హత్యకు ఎలా శిక్షించబడుతుందో అలాగే మరణశిక్ష లేదా జరిమానాతో పాటు జీవిత ఖైదు. ఇది ఎ 
-      వెలుగుచూస్తున్న హత్యల సంఘటనల వెలుగులో BNSకి పురోగతి అదనంగా
-       సంవత్సరాల తరబడి మరియు భవిష్యత్తులో అలాంటి సంఘటనలు జరగకుండా శక్తివంతమైన నిరోధకంగా పనిచేస్తుందని భావిస్తున్నారు.`
-                    : `हालाँकि, एक संशोधन के माध्यम से बीएनएस की धारा 103 के तहत हत्या के प्रावधान को जोड़ा गया।
-     पाँच या अधिक लोगों के समूह द्वारा की गई कोई भी हत्या, विशेष रूप से जैसी स्थितियों पर आधारित
-      धर्म, जाति या समुदाय, जन्म स्थान, व्यक्तिगत आस्था आदि अब स्पष्ट रूप से दंडनीय है 
-      जुर्माने के साथ मृत्युदंड या आजीवन कारावास, ठीक वैसे ही जैसे हत्या की सजा दी जाती है। यह एक है 
-      लिंचिंग की सामने आ रही घटनाओं के आलोक में बीएनएस में बड़ी सफलता मिली है
-       वर्षों से और भविष्य में ऐसी किसी भी घटना के खिलाफ एक शक्तिशाली निवारक के रूप में कार्य करने की उम्मीद है।`}
+                    ? `BNSS CrPC యొక్క చాలా నిబంధనలను కలిగి ఉంది.   ప్రతిపాదించిన కీలక మార్పులు:`
+                    : `बीएनएसएस सीआरपीसी के अधिकांश प्रावधानों को बरकरार रखता है।   प्रस्तावित प्रमुख परिवर्तनों में शामिल हैं:`}
                 </p>
                 <p className="bnsp78">
+                <span
+                    style={{
+                      color: "#707070",
+                      marginRight: "10px",
+                      fontSize: "10px",
+                    }}
+                  >
+                    <GoDotFill />
+                  </span>
                   {selectedLanguage === "English"
-                    ? `Grievous hurt caused by a mob of five or more people has also been punished separately
-     under the provision of Section 117(4) of the BNS, solidifying the resolve against mob justice.`
+                    ? `Detention of undertrials:  As per the CrPC, if an accused has spent half of the maximum period of imprisonment in detention, he must be released on personal bond.  This does not apply to offences punishable by death.  The Bill adds that this provision will also not apply to: (i) offences punishable by life imprisonment, and (ii) persons against whom proceedings are pending in more than one offence.`
                     : selectedLanguage === "Telugu"
-                    ? `ఐదుగురు లేదా అంతకంటే ఎక్కువ మంది వ్యక్తుల గుంపు వల్ల కలిగే తీవ్రమైన గాయం కూడా విడిగా శిక్షించబడింది
-     BNS యొక్క సెక్షన్ 117(4) ప్రకారం, మూకుమ్మడి న్యాయానికి వ్యతిరేకంగా సంకల్పాన్ని పటిష్టం చేస్తుంది.`
-                    : `पांच या अधिक लोगों की भीड़ द्वारा पहुंचाई गई गंभीर चोट के लिए भी अलग से सजा दी गई है
-     बीएनएस की धारा 117(4) के प्रावधान के तहत, भीड़ न्याय के खिलाफ संकल्प को मजबूत करना।`}
+                    ? `అండర్ ట్రయల్‌ల నిర్బంధం: CrPC ప్రకారం, ఒక నిందితుడు గరిష్ట కారాగార కాల వ్యవధిలో సగభాగం నిర్బంధంలో గడిపినట్లయితే, అతన్ని తప్పనిసరిగా వ్యక్తిగత పూచీకత్తుపై విడుదల చేయాలి.  మరణశిక్ష విధించదగిన నేరాలకు ఇది వర్తించదు.  ఈ నిబంధన కింది వాటికి కూడా వర్తించదని బిల్లు జతచేస్తుంది: (i) జీవిత ఖైదు విధించే నేరాలు మరియు (ii) ఒకటి కంటే ఎక్కువ నేరాలలో విచారణ పెండింగ్‌లో ఉన్న వ్యక్తులకు.`
+                    : `विचाराधीन कैदियों की हिरासत: सीआरपीसी के अनुसार, यदि किसी आरोपी ने कारावास की अधिकतम अवधि का आधा हिस्सा हिरासत में बिताया है, तो उसे व्यक्तिगत बांड पर रिहा किया जाना चाहिए।  यह मृत्युदंड वाले अपराधों पर लागू नहीं होता है।  विधेयक में कहा गया है कि यह प्रावधान इन पर भी लागू नहीं होगा: (i) आजीवन कारावास की सजा वाले अपराध, और (ii) ऐसे व्यक्ति जिनके खिलाफ एक से अधिक अपराधों में कार्यवाही लंबित है।`}
                 </p>
+                <p className="bnsp78">
+                <span
+                    style={{
+                      color: "#707070",
+                      marginRight: "10px",
+                      fontSize: "10px",
+                    }}
+                  >
+                    <GoDotFill />
+                  </span>
+                  {selectedLanguage === "English"
+                    ? `Medical examination:  The CrPC allows medical examination of the accused in certain cases, including rape cases.  Such examination is done by a registered medical practitioner on the request of at least a sub-inspector level police officer.  The Bill provides that any police officer can request such an examination.`
+                    : selectedLanguage === "Telugu"
+                    ? `వైద్య పరీక్ష: అత్యాచారం కేసులతో సహా కొన్ని కేసుల్లో నిందితులకు వైద్య పరీక్షలను CrPC అనుమతిస్తుంది.  కనీసం సబ్-ఇన్‌స్పెక్టర్ స్థాయి పోలీసు అధికారి అభ్యర్థన మేరకు రిజిస్టర్డ్ మెడికల్ ప్రాక్టీషనర్ అటువంటి పరీక్షను నిర్వహిస్తారు.  ఏ పోలీసు అధికారి అయినా అటువంటి పరీక్షను అభ్యర్థించవచ్చని బిల్లు అందిస్తుంది.`
+                    : `मेडिकल जांच: सीआरपीसी बलात्कार के मामलों सहित कुछ मामलों में आरोपी की मेडिकल जांच की अनुमति देता है।  ऐसी जांच कम से कम एक उप-निरीक्षक स्तर के पुलिस अधिकारी के अनुरोध पर एक पंजीकृत चिकित्सक द्वारा की जाती है।  विधेयक में प्रावधान है कि कोई भी पुलिस अधिकारी ऐसी जांच का अनुरोध कर सकता है।`}
+                </p>
+                <p className="bnsp78">
+                <span
+                    style={{
+                      color: "#707070",
+                      marginRight: "10px",
+                      fontSize: "10px",
+                    }}
+                  >
+                    <GoDotFill />
+                  </span>
+                  {selectedLanguage === "English"
+                    ? `Forensic investigation:  The Bill mandates forensic investigation for offences punishable with at least seven years of imprisonment.  In such cases, forensic experts will visit crime scenes to collect forensic evidence and record the process on mobile phone or any other electronic device.  If a state does not have forensics facility, it shall utilise such facility in another state.`
+                    : selectedLanguage === "Telugu"
+                    ? `ఫోరెన్సిక్ విచారణ: కనీసం ఏడేళ్ల జైలు శిక్షతో కూడిన నేరాలకు ఫోరెన్సిక్ విచారణను బిల్లు తప్పనిసరి చేస్తుంది.  అటువంటి సందర్భాలలో, ఫోరెన్సిక్ నిపుణులు నేర దృశ్యాలను సందర్శించి ఫోరెన్సిక్ సాక్ష్యాలను సేకరించి, మొబైల్ ఫోన్ లేదా ఏదైనా ఇతర ఎలక్ట్రానిక్ పరికరంలో ప్రక్రియను రికార్డ్ చేస్తారు.  ఒక రాష్ట్రానికి ఫోరెన్సిక్స్ సదుపాయం లేకపోతే, అది మరొక రాష్ట్రంలో అలాంటి సౌకర్యాన్ని ఉపయోగించుకుంటుంది.`
+                    : `फोरेंसिक जांच: विधेयक कम से कम सात साल की कैद की सजा वाले अपराधों के लिए फोरेंसिक जांच को अनिवार्य बनाता है।  ऐसे मामलों में, फोरेंसिक विशेषज्ञ फोरेंसिक साक्ष्य इकट्ठा करने के लिए अपराध स्थलों का दौरा करेंगे और प्रक्रिया को मोबाइल फोन या किसी अन्य इलेक्ट्रॉनिक उपकरण पर रिकॉर्ड करेंगे।  यदि किसी राज्य के पास फोरेंसिक सुविधा नहीं है, तो वह दूसरे राज्य में ऐसी सुविधा का उपयोग करेगा।`}
+                </p>
+                <p className="bnsp78">
+                <span
+                    style={{
+                      color: "#707070",
+                      marginRight: "10px",
+                      fontSize: "10px",
+                    }}
+                  >
+                    <GoDotFill />
+                  </span>
+                  {selectedLanguage === "English"
+                    ? `Signatures and finger impressions:  The CrPC empowers a Magistrate to order any person to provide specimen signatures or handwriting.  The Bill expands this to include finger impressions and voice samples.   It allows these samples to be collected from a person who has not been arrested.`
+                    : selectedLanguage === "Telugu"
+                    ? `సంతకాలు మరియు వేలి ముద్రలు: ఏదైనా వ్యక్తికి నమూనా సంతకాలు లేదా చేతివ్రాతను అందించమని ఆదేశించడానికి CrPC మేజిస్ట్రేట్‌కు అధికారం ఇస్తుంది.  వేలి ముద్రలు మరియు వాయిస్ నమూనాలను చేర్చడానికి బిల్లు దీన్ని విస్తరిస్తుంది.   అరెస్టు చేయని వ్యక్తి నుండి ఈ నమూనాలను సేకరించడానికి ఇది అనుమతిస్తుంది.`
+                    : `हस्ताक्षर और उंगलियों के निशान: सीआरपीसी एक मजिस्ट्रेट को किसी भी व्यक्ति को नमूना हस्ताक्षर या लिखावट प्रदान करने का आदेश देने का अधिकार देता है।  विधेयक में इसका विस्तार करते हुए उंगलियों के निशान और आवाज के नमूनों को शामिल किया गया है।   यह इन नमूनों को ऐसे व्यक्ति से एकत्र करने की अनुमति देता है जिसे गिरफ्तार नहीं किया गया है।`}
+                </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 <h4 className="bnsp6">
                   {selectedLanguage === "English"
                     ? `Removal of Certain Language and Provisions Removal of Adultery`
