@@ -627,57 +627,6 @@ const Bnss = () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 <h4 className="bnsp6">
                   {selectedLanguage === "English"
                     ? `Removal of Certain Language and Provisions Removal of Adultery`
